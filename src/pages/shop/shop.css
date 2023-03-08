@@ -1,5 +1,7 @@
 .shopTitle {
+  width: 100%;
   margin-top: 100px;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 40px;
 }
@@ -53,3 +55,32 @@
   color: white;
   cursor: pointer;
 }
+
+/* =============MEDIA QUERIES (MEDIUM DEVICES)=========== */
+
+@media screen and (max-width: 1024px) { 
+  .products {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .product img {
+    width: 290px;
+  }
+}
+
+/* =============MEDIA QUERIES (SMALL DEVICES)=========== */
+
+@media screen and (max-width: 600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .shopTitle {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .shopTitle h1 {
+    font-size: 40px;
+  }
+  }
